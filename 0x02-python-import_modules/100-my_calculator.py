@@ -1,15 +1,17 @@
 #!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
-import sys
+
 if __name__ == "__main__":
+    from calculator_1 import add, sub, mul, div
+    import sys
 
     if not len(sys.argv) == 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-    ops = sys.argv[2]
 
+    ops = sys.argv[2]
     a = sys.argv[1]
     b = sys.argv[3]
+
     if ops is '+':
         result = add(int(a), int(b))
     elif ops is '-':
