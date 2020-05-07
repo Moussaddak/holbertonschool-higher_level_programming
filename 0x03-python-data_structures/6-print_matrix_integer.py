@@ -9,6 +9,6 @@ def print_matrix_integer(matrix=[[]]):
             elif i == matrix[len(matrix) - 1][-1]:
                 print("{}".format(i), end='')
             else:
-                print("{}".format(i), end="\n");
+                print("{}".format(i), end="\n")
         x += 1
     print("")
