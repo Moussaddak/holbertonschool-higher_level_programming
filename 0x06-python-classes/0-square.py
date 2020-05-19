@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+''' Empty Square method'''
 class Square:
-    '''Empty Class Square'''
+    '''Empty Square Class'''
     pass
