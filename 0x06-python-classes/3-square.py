@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" documentation of method"""
 
 
 class Square:
