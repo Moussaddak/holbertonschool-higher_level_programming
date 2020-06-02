@@ -22,3 +22,19 @@ import the class MyList from the ``1-my_list`` module:
        >>> l = MyList([2])
        >>> l.print_sorted()
        [2]
+
+
+       >>> l = MyList()
+       >>> l.append(0)
+       >>> l.print_sorted()
+       [0]
+
+
+       >>> l = MyList()
+       >>> type(l) == MyList
+       True
+
+
+       >>> l = MyList()
+       >>> isinstance(l, MyList)
+       True
