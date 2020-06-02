@@ -12,6 +12,8 @@ import the class MyList from the ``1-my_list`` module:
        >>> l = MyList([3, 2, 1])
        >>> l.print_sorted()
        [1, 2, 3]
+       >>> l
+       [3, 2, 1]
 
 
        >>> l = MyList([-1, -2, -3])
