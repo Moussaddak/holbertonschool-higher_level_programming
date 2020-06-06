@@ -19,10 +19,12 @@ def C(k, l):
 
 def pascal_triangle(n):
     """ Pascal's triangle """
+    k = []
     if n <= 0:
         return []
     for i in range(n):
         l = []
         for j in range(i + 1):
             l.append(C(i, j))
-        print(l)
+        k.append(l)
+    return k
