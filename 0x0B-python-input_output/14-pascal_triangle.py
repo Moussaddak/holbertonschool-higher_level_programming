@@ -2,7 +2,7 @@
 """ mothod of Pascal's triangle """
 
 
-def factorial(n):
+def f(n):
     """ factorial function """
     r = 1
     if not n:
@@ -21,7 +21,7 @@ def pascal_triangle(n):
     """ Pascal's triangle """
     if n <= 0:
         return []
-    for i in range(5):
+    for i in range(n):
         l = []
         for j in range(i + 1):
             l.append(C(i, j))
