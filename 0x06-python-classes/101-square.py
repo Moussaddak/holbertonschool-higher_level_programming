@@ -72,13 +72,13 @@ class Square:
         else:
             self.__position = value
 
-    def __repr__(self):
+    def __str__(self):
         s = ''
         if not self.__size:
             s = '\n'
             return s
         for i in range(self.__position[1]):
-            s = '\n'
+            s += '\n'
         for i in range(self.__size):
             for j in range(self.__position[0]):
                 s += " "
