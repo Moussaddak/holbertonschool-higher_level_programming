@@ -72,7 +72,7 @@ class Square:
         else:
             self.__position = value
 
-    def __str__(self):
+    def __repr__(self):
         s = ''
         if not self.__size:
             s = '\n'
