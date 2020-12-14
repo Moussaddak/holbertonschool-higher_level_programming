@@ -15,9 +15,8 @@ if __name__ == "__main__":
                          charset="utf8")
 
     with db.cursor() as cursor:
-        cursor.execute("SELECT * FROM states WHERE name=('{}') ORDER BY id"
-                       .format(argv[4]))
+        cursor.execute("SELECT * FROM states WHERE name LIKE BINARY ('{}')\
+                          ORDER BY id".format(argv[4]))
         rows = cursor.fetchall()
         for row in rows:
-            if row[1] == argv[4]:
-                print(row)
+            print(row)
