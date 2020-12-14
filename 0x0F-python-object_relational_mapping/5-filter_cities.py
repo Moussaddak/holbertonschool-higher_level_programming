@@ -19,5 +19,4 @@ if __name__ == "__main__":
         LEFT JOIN states ON cities.state_id = states.id WHERE states.name\
         LIKE BINARY '{}' ORDER BY cities.id".format(argv[4]))
         rows = cursor.fetchall()
-        print(rows)
         print(", ".join(row[0] for row in rows))
