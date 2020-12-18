@@ -1,4 +1,3 @@
 #!/bin/bash
 # cURL Method: display the body of the response passed
-
-curl -sX DELETE "$1"
+curl -X DELETE "$1"
