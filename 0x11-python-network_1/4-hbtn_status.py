@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """ What's my status? #1 """
-from urllib.request import urlopen
+import requests
 
-url = 'https://intranet.hbtn.io/status'
-with urlopen(url) as r:
-    data = r.read().decode('utf-8')
+
+if __name__ == "__main__":
+    url = 'https://intranet.hbtn.io/status'
+    data = requests.get(url)
     print("Body response:")
-    print("\t- type: {}".format(type(data)))
-    print("\t- content: {}".format(data))
+    print("\t- type: {}".format(type(data.text)))
+    print("\t- content: {}".format(data.text))
