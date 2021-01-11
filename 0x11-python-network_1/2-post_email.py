@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" 2. POST an email #0 """
 from urllib.request import urlopen, Request
 import urllib.parse
 from sys import argv
