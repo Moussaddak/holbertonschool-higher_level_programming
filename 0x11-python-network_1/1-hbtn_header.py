@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Get header of the response """
 from urllib.request import urlopen
 from sys import argv
 
